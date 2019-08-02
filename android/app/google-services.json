@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "915156846588",
+    "firebase_url": "https://flash-chat-c-soft.firebaseio.com",
+    "project_id": "flash-chat-c-soft",
+    "storage_bucket": "flash-chat-c-soft.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915156846588:android:ac4cbe26eec679e5",
+        "android_client_info": {
+          "package_name": "com.chigisoft.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915156846588-db3tu2sn4634i1apkkgh1ggkpmtg3u1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHcS3C3-XBE0WY4LRHVgQNQRU97mkAAXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915156846588-db3tu2sn4634i1apkkgh1ggkpmtg3u1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
