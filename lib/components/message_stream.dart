@@ -17,7 +17,10 @@ class MessageStream extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
-      stream: _cloud.collection('messages').orderBy('time').snapshots(),
+      stream: _cloud
+          .collection('messages')
+          .orderBy('time', descending: true)
+          .snapshots(),
       builder: (context, snapshot) {
 //                textMessages is the list of text messages that will
 //                eventually display as text bubbles on the users screen
@@ -36,8 +39,7 @@ class MessageStream extends StatelessWidget {
 //                Contained in the current QuerySnapshot is the data in our
 //                collections, ie the messages
 
-          Iterable<DocumentSnapshot> firebaseSnapshots =
-              snapshot.data.documents.reversed;
+          List<DocumentSnapshot> firebaseSnapshots = snapshot.data.documents;
 //                  firebaseSnapshots returns that list of messages and in the
 //                  following for loop we access those individual messages
           for (DocumentSnapshot documentSnapshot in firebaseSnapshots) {
